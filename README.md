@@ -1,11 +1,8 @@
 # Hogwarts-Legacy-VR-Body-IK-Profile
-VR body system for Hogwarts Legacy using UEVR. Adds a fully visible first-person body with hand IK, finger animations, leg animation, body calibration, head-mounted camera, crouching support, automatic bone detection, and dedicated support for broomstick and creature mounts.
 
-# Hogwarts Legacy VR — First Person Profile + VR Body
+VR body system for **Hogwarts Legacy using UEVR**, built upon the original First Person Profile by **jbusfield, Pande4360, DJ, markmon and letmein**.
 
-An enhanced VR profile for **Hogwarts Legacy using UEVR**, built upon the original First Person Profile by **jbusfield, Pande4360, DJ, markmon and letmein**.
-
-This project expands the original VR experience with a full first-person body, animated hands and legs, improved equipment synchronization, mounted gameplay support, body calibration and several VR improvements.
+Adds a fully visible first-person body with hand IK, finger and leg animations, body calibration, head-mounted camera, crouching support, improved equipment synchronization, and dedicated support for broomsticks and creature mounts.
 
 > **For Epic Games:** Delete `EOSSDK-Win64-Shipping.dll` from the game directory to fix controller input issues.
 
