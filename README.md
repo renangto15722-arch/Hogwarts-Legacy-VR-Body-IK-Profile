@@ -3,11 +3,9 @@ VR body system for Hogwarts Legacy using UEVR. Adds a fully visible first-person
 
 # Hogwarts Legacy VR — First Person Profile + VR Body
 
-**First Person Profile V1.08c + VR Body**
-
 An enhanced VR profile for **Hogwarts Legacy using UEVR**, built upon the original First Person Profile by **jbusfield, Pande4360, DJ, markmon and letmein**.
 
-The project expands the original first-person VR experience with a fully integrated virtual body, hand IK, animated legs, equipment synchronization, mounted gameplay support, body calibration and several VR-specific improvements.
+This project expands the original VR experience with a full first-person body, animated hands and legs, improved equipment synchronization, mounted gameplay support, body calibration and several VR improvements.
 
 > **For Epic Games:** Delete `EOSSDK-Win64-Shipping.dll` from the game directory to fix controller input issues.
 
@@ -15,7 +13,7 @@ The project expands the original first-person VR experience with a fully integra
 
 # Original First Person Profile
 
-This project is based on the **First Person Profile V1.08c**, originally developed by:
+This project is based on **First Person Profile V1.08c**, originally developed by:
 
 **jbusfield · Pande4360 · DJ · markmon · letmein**
 
@@ -23,7 +21,7 @@ The original profile introduced:
 
 - Full first-person 6DOF motion controls
 - Optional visible hands
-- Optional gesture-based spell casting using the Glyph System
+- Gesture-based spell casting using the Glyph System
 - Improved wand handling
 - Spatial audio improvements
 - Reduced wand detachment issues
@@ -34,237 +32,160 @@ The original profile introduced:
 ### letmein
 
 - Added the spatial audio fix.
-- Added code intended to reduce the frequency of wand detachments.
+- Added improvements that may reduce wand detachments.
 
 ## V1.0b
 
 ### markmon
 
-- Re-enabled perfect wand accuracy without requiring offsets.
+- Re-enabled perfect wand accuracy without offsets.
 
 ## V1.08
 
 - Removed the UE4SS dependency.
-- Previous installations must be removed or renamed before installing this version.
 
 ---
 
 # VR Body
 
-The VR Body system extends the original profile by adding a complete virtual body to the first-person VR experience.
+The VR Body expands the original profile by adding a complete virtual body to the first-person VR experience.
 
-The body uses an independent copy of the player's character mesh, including clothing and other attached meshes. Two Bone IK systems control the arms so that the virtual hands follow the VR controllers.
+## Features
 
-Existing finger animations are also reused, allowing the virtual hands to respond naturally to trigger, grip and thumb inputs.
+### 🧍 Full VR Body
 
----
-
-# Main Features
-
-## 🧍 Full VR Body
-
-- Full visible first-person body
-- Independent body mesh
-- VR hand IK
+- Full visible body in first person
+- Visible arms and hands
 - Animated fingers
 - Animated legs
-- Body position calibration
-- Body rotation calibration
+- Body height and position calibration
 - Optional arms-only mode
-- Body/head alignment
 - Physical crouching support
 
-## ✋ VR Hands & IK
+### ✋ VR Hands
 
-- Hand tracking through Two Bone IK
-- Arms follow the VR controllers
-- Finger animations for trigger, grip and thumb
-- Integrated with the original hand animation system
+Your virtual hands follow your VR controllers and include finger movements for actions such as gripping and using the trigger.
 
-## 🦵 Legs & Body Movement
+### 🦵 Legs
 
-The VR body can use the game's leg animations while keeping the upper body and VR-controlled hands independent.
-
-This allows the legs to retain natural Hogwarts Legacy animations without allowing the game's animation system to override the VR hand and arm positioning.
-
-Supports:
-
-- Physical crouching
-- In-game crouching
-- Eye-height calibration
-- Body height adjustment
-- Body rotation
+The body can display natural leg movement while keeping the VR hands and upper body properly controlled.
 
 ---
 
 # ⭐ Equipment Synchronization
 
-One of the major improvements in this version is **automatic VR body reconstruction when equipment changes**.
+One of the main improvements in this version is **automatic VR body reconstruction when your equipment changes**.
 
-When the player changes clothing or equipment, Hogwarts Legacy can change the meshes attached to the character.
+When you change clothing or other equipment, the VR body is rebuilt to match your character's current appearance.
 
-The VR Body system rebuilds the virtual body so that it continues to match the player's current appearance.
-
-This prevents problems such as:
+This helps prevent:
 
 - Old clothing remaining on the VR body
-- Newly equipped clothing not appearing
-- Missing character meshes
-- Incomplete body reconstruction
-- The VR body becoming visually different from the actual character
+- New equipment not appearing
+- Missing body parts
+- The VR body becoming out of sync with your character
 
-The system is designed to avoid unnecessary reconstruction when the body is already correctly built.
-
-This is especially important because the VR body is an independent copy of the game's character mesh.
+The system also avoids unnecessary rebuilds when the body is already correctly synchronized.
 
 ## 🔄 Manual Body Rebuild
 
-The **VR Body** menu also includes a manual rebuild option.
+A **Rebuild Body** option is available in the VR Body menu.
 
-This can be useful when:
+You can use it if:
 
 - Equipment does not update correctly
 - The body becomes incomplete
 - A game transition leaves the body in an incorrect state
-- The player wants to force the body to synchronize again
+- You simply want to force the body to synchronize again
 
 ---
 
-# 👂 Right-Hand Ear Grab — Body Rebuild
+# 👂 Right-Hand Ear Grab
 
-A special recovery mechanism has been added.
+A special recovery gesture is available:
 
-### Grab your right ear with the right VR hand.
+### Grab your right ear with your right VR hand.
 
-This action triggers a **complete VR body reconstruction**.
+This triggers a **VR body rebuild**.
 
-The shortcut provides a quick way to recover the body without restarting the game and can prevent or fix certain body-related bugs caused by unusual game-state transitions.
-
-It is designed as an easy-to-remember recovery gesture that can be performed during gameplay.
+It provides a quick way to recover from certain body-related issues without restarting the game and can help prevent or fix bugs caused by unusual game transitions.
 
 ---
 
 # 👀 VR Camera
 
-The project includes an optional camera attached to the head of the virtual body.
+The VR Body includes an optional camera system that keeps your view aligned with the virtual body.
 
-This helps maintain proper alignment between:
+Available options include:
 
-- Head
-- Neck
-- Body
-- VR view
+- Eye height
+- Looking down
+- Camera positioning
+- Body/head alignment
 
-Additional camera options include:
-
-- Eye-height adjustment
-- Looking-down camera movement
-- Configurable camera advancement
-- Mount-specific camera behavior
-
-The camera system also respects situations where the game temporarily disables VR camera offsets, such as the Field Guide and equipment screens.
+Additional camera controls are available under **Advanced Settings**.
 
 ---
 
 # 🐎 Mount Support
 
-The VR Body includes dedicated handling for mounted gameplay.
-
-Supported scenarios include:
+The VR Body supports mounted gameplay, including:
 
 - Broomsticks
 - Hippogriffs
 - Graphorns
 - Other creature mounts
 
-The player's own character mesh is used for the VR body while the system adapts the body to the mount's position and animation.
+The body adapts to the player's position and posture while riding.
 
 Mounted gameplay includes:
 
-- VR hand IK
+- VR hands
 - Body positioning
 - Animated legs
-- Headset-following torso
-- Spine posture adjustments
-- Mount-specific body orientation
+- Head following
+- Spine and posture adjustments
+
+Additional mount and posture controls are available under **Advanced Settings**.
 
 ---
 
-# 🧍 Mounted Posture
+# 🎬 First Person Cinematics
 
-Some creatures place the player in a heavily reclined position.
+**First Person Cinematics works correctly with the profile.**
 
-The VR Body includes additional controls for correcting this posture.
-
-Available adjustments include:
-
-- Spine straightening
-- Lateral spine adjustment
-- Fine spine rotation
-- Torso following the headset
-- Sensitivity
-- Dead zone
-- Rotation limits
-
-These settings allow the virtual body to remain visually aligned with the player's real-world position while riding.
-
----
-
-# 🎬 First Person Cutscenes
-
-The profile includes support for **First Person Cinematics**, but this feature has an important limitation.
-
-### Recommended setting: **OFF**
-
-The profile's cinematic system was designed around third-person cinematics.
-
-When a cinematic starts, the profile temporarily:
-
-- Restores the game's original character mesh
-- Hides the VR hands
-- Disables body/head-following behavior
-- Disables certain VR controls
-- Handles the transition back to the VR body
-
-If **First Person Cinematics** is enabled, this cinematic handling is bypassed and several problems can occur, including:
-
-- The original character mesh remaining visible
-- UI attachments becoming incorrectly positioned
-- Body and camera synchronization problems
-- Incorrect view state after the cinematic
+You can enable or disable the option normally when you are not in a cutscene.
 
 ### ⚠️ Important
 
-**Do not toggle First Person Cinematics ON or OFF while a cutscene is already playing.**
+**Do not turn First Person Cinematics ON or OFF while a cutscene is currently playing.**
 
-Changing this setting during a cinematic can cause the profile to enter an incorrect state and may require restarting the game.
+Changing the setting during an active cutscene can cause the profile to enter an incorrect state and may lead to visual or camera issues.
 
-The recommended configuration is to leave **First Person Cinematics disabled**.
-
-After a cinematic ends, the VR body can be rebuilt to restore the correct state.
+For the best experience, choose your preferred setting **before or after** the cutscene instead of changing it while the cutscene is running.
 
 ---
 
 # ⚠️ Known Performance Issue
 
-There is currently an **unknown issue that may cause performance degradation** in some situations.
+There is currently an **unknown issue that may cause a loss of performance in some situations**.
 
 The exact cause has not yet been identified.
 
-If you experience an unexpected performance drop after using the profile, restarting the game may restore normal performance.
+If you experience an unexpected performance drop, restarting the game may restore normal performance.
 
-This issue is currently under investigation.
+This issue is still under investigation.
 
 ---
 
-# ⚙️ VR Body Configuration
+# ⚙️ VR Body Settings
 
-The profile adds a dedicated **VR Body** configuration interface inside UEVR.
+The **VR Body** menu contains the main settings needed to configure the body.
 
-Available options include:
+These include:
 
-- Enable VR Body
-- Use Body Hands
+- Enable/Disable VR Body
+- Body Hands
 - Arms Only
 - Arm Height
 - Eye Height
@@ -277,36 +198,26 @@ Available options include:
 - Rebuild Body
 - Restore Defaults
 
-Advanced settings provide additional control over camera, body movement and mounted posture.
+## 🔄 Restore Default Settings
 
----
+If you want to restore the original settings, the **VR Body** menu includes a **Restore Defaults** button.
 
-# 🛠️ Other Improvements
+This button restores the default values included with the mod, allowing you to quickly return to the original recommended configuration without manually changing each setting.
 
-## UEVR Initialization
+## Advanced Settings
 
-Updated the UEVR initialization process to work correctly with the newer version of `uevrlib`.
+Some more advanced options are hidden under **Advanced Settings** to keep the main menu simple.
 
-This restores proper initialization of the profile configuration and required game hooks.
+These include additional controls for:
 
-## Updated uevrlib
+- Camera behavior
+- Body movement
+- Leg behavior
+- Mount posture
+- Spine adjustments
+- Other fine-tuning options
 
-The profile's library files were updated to a newer version of `uevrlib`, including the IK functionality required by the VR Body system.
-
-## Locomotion Compatibility
-
-Improved compatibility with UEVR's **Locomotion: Head** setting.
-
-The profile no longer unnecessarily overrides the UEVR locomotion configuration when the profile itself is not controlling locomotion.
-
-## Field Guide & Equipment Camera
-
-The VR camera system was updated so that the camera correctly respects situations where the game temporarily disables VR camera offsets.
-
-This prevents the body camera from interfering with screens such as:
-
-- Field Guide map
-- Equipment screen
+For most users, the default settings should be sufficient.
 
 ---
 
@@ -350,44 +261,30 @@ from the Hogwarts Legacy game directory if controller input is not working.
 
 ## Original First Person Profile
 
-### jbusfield
+**jbusfield · Pande4360 · DJ · markmon · letmein**
 
-Foundational development of the original First Person Profile and its first-person VR framework.
+### Contributions
 
-### Pande4360
-
-Core profile development, VR integration and continued improvements to the Hogwarts Legacy VR experience.
-
-### DJ
-
-Contributions to the original profile and VR gameplay integration.
-
-### markmon
-
-Restored **perfect wand accuracy without offsets**.
-
-### letmein
-
-Added the **spatial audio fix** and improvements intended to reduce wand detachments.
+- **jbusfield, Pande4360 & DJ** — Original First Person Profile and VR improvements
+- **markmon** — Perfect wand accuracy without offsets
+- **letmein** — Spatial audio fix and wand detachment improvements
 
 ---
 
 # 🤖 Development
 
-The VR Body system was **built with extensive assistance from AI**.
+The VR Body system was **developed with extensive assistance from AI**.
 
 AI was used throughout development for:
 
-- Lua programming
-- UEVR integration
-- Code architecture
+- Programming
 - Debugging
-- Reverse engineering assistance
 - Problem solving
-- Iterative code improvements
+- UEVR integration
+- Code improvements
 - Documentation
 
-The implementation was developed through an iterative process combining **AI-assisted development with real gameplay testing** in Hogwarts Legacy VR.
+The project was developed through an iterative process combining **AI-assisted development with real gameplay testing** in Hogwarts Legacy VR.
 
 ---
 
