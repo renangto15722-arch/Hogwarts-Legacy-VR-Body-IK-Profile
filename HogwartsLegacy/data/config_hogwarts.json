@@ -1,0 +1,17 @@
+{
+    "attachedUI": true,
+    "controlMode": 2,
+    "fpCinematic": false,
+    "gestureMode": 1,
+    "isFP": true,
+    "locomotionMode": 2,
+    "manualHideWand": true,
+    "showHands": false,
+    "smoothTurnSpeed": 50,
+    "snapAngle": 23,
+    "targetingMode": 2,
+    "useCrossHair": false,
+    "useSnapTurn": true,
+    "useVolumetricFog": false,
+    "virtualMouse": false
+}

@@ -1,0 +1,103 @@
+{
+    "_profileLabels": {
+        "default": "Corpo Completo"
+    },
+    "_profileState": {
+        "currentEditingProfile": "default"
+    },
+    "default": {
+        "animation_location_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "animation_mesh": "Custom",
+        "animation_rotation_offset": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "hide_body": false,
+        "left_shoulder_bone_name": "LeftShoulder",
+        "mesh": "Custom",
+        "mesh_location_offset": [
+            0.0,
+            0.0,
+            -90.015
+        ],
+        "mesh_rotation_offset": [
+            0.0,
+            -90.0,
+            0.0
+        ],
+        "parent_type": 1,
+        "right_shoulder_bone_name": "RightShoulder",
+        "shoulder_width_scale": 1.0,
+        "show_debug_meshes": false,
+        "solvers": {
+            "hogwarts-arm-left": {
+                "active": true,
+                "allow_stretch": true,
+                "allow_wrist_affects_elbow": true,
+                "end_bone": "LeftHand",
+                "end_bone_lock_pitch": false,
+                "end_bone_lock_roll": false,
+                "end_bone_lock_yaw": false,
+                "end_bone_offset": [
+                    -0.803,
+                    -2.103,
+                    -2.4032
+                ],
+                "end_bone_rotation": [
+                    -357.0,
+                    12.0,
+                    -177.0
+                ],
+                "end_control_type": 0,
+                "joint_bone": "LeftForeArm",
+                "label": "Braco Esquerdo",
+                "max_stretch_scale": 0.7649999856948853,
+                "smoothing": 0.0,
+                "solver_type": 1,
+                "sort_order": 2,
+                "start_bone": "LeftArm",
+                "start_stretch_ratio": 0.0,
+                "wrist_bone": "",
+                "wrist_twist_influence": 0.3190000057220459,
+                "wrist_twist_max": 82.5
+            },
+            "hogwarts-arm-right": {
+                "active": true,
+                "allow_stretch": true,
+                "allow_wrist_affects_elbow": true,
+                "end_bone": "RightHand",
+                "end_bone_lock_pitch": false,
+                "end_bone_lock_roll": false,
+                "end_bone_lock_yaw": false,
+                "end_bone_offset": [
+                    -2.6,
+                    3.0999,
+                    -1.1051
+                ],
+                "end_bone_rotation": [
+                    -185.0,
+                    -4.0,
+                    -180.0
+                ],
+                "end_control_type": 1,
+                "joint_bone": "RightForeArm",
+                "label": "Braco Direito",
+                "max_stretch_scale": 1.0,
+                "smoothing": 0,
+                "solver_type": 1,
+                "sort_order": 1,
+                "start_bone": "RightArm",
+                "start_stretch_ratio": 0.0,
+                "wrist_bone": "",
+                "wrist_twist_influence": 0.35,
+                "wrist_twist_max": 75.0
+            }
+        },
+        "spine_bone_name": "Spine3"
+    }
+}

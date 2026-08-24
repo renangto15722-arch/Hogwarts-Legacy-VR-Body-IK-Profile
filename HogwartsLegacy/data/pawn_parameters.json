@@ -1,0 +1,22 @@
+{
+    "_profileLabels": {
+        "default": "Default"
+    },
+    "_profileState": {
+        "currentEditingProfile": "default"
+    },
+    "default": {
+        "armsAnimationMeshName": "Pawn.Mesh",
+        "armsMeshFOVFixID": "",
+        "armsMeshName": "Pawn.Mesh",
+        "basePawnName": "Pawn",
+        "bodyMeshFOVFixID": "",
+        "bodyMeshName": "Pawn.Mesh",
+        "hideAnimationArms": false,
+        "hidePawnArmsBones": false,
+        "hidePawnArmsMesh": false,
+        "hidePawnBodyMesh": false,
+        "pawnUpperArmLeft": "",
+        "pawnUpperArmRight": ""
+    }
+}

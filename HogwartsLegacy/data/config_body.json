@@ -1,0 +1,37 @@
+{
+    "body_animate": true,
+    "body_armsHeight": -15,
+    "body_armsOffset": [
+        0.0,
+        0.0,
+        -15.0
+    ],
+    "body_autoDetectBones": true,
+    "body_broomSpineRoll": true,
+    "body_broomSpineUpright": 1.0,
+    "body_devMode": false,
+    "body_enabled": true,
+    "body_followCrouch": false,
+    "body_followView": true,
+    "body_followViewDeadzone": 5,
+    "body_gazeLean": true,
+    "body_gazeLeanMax": 16.677,
+    "body_headCamera": true,
+    "body_headCameraHeight": 5,
+    "body_legOffset": [
+        0.0,
+        3.0,
+        0.0
+    ],
+    "body_mountArmsIK": true,
+    "body_mountHipAlign": true,
+    "body_mountHipDeadzone": 0,
+    "body_mountHipMaxYaw": 0,
+    "body_mountHipSensitivity": 0.0,
+    "body_mountSpineRoll": true,
+    "body_mountSpineTrim": -1.45,
+    "body_mountSpineUpright": 0.785,
+    "body_onlyArms": false,
+    "body_replaceHands": true,
+    "body_shadow": false
+}
